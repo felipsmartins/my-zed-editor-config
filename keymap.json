@@ -1,0 +1,17 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-w": "editor::SelectLargerSyntaxNode"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-f9": ["task::Spawn", { "task_name": "Build C Program" }],
+            "ctrl-f10": ["task::Spawn", { "task_name": "Run C Program" }],
+            "ctrl-f11": ["workspace::SendKeystrokes", "ctrl-f9 ctrl-f10"],
+            "shift-f10": ["workspace::SendKeystrokes", "ctrl-f9 ctrl-f10"]
+        }
+    }
+]
